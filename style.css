@@ -1,0 +1,117 @@
+:root {
+    --color-backgroud: #417FB8;
+    --color-basefont: #FFFFFF;
+    --color-button: #AAD5E6;
+    --color-hover:#C0C0C0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-backgroud);
+    color: var(--color-basefont);
+    font-family: sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+/* 
+.container, .container h1{
+
+    padding: 20px;
+    text-align: center;
+} */
+
+.container{
+    padding: 20px;
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btnClick {
+    cursor: pointer;
+    width: 100%;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5%;
+}
+.btnClick:hover{
+    background-color: var(--color-hover);
+}
+.btnClick:focus {
+    outline: 0;
+}
+
+.btnClick:active {
+    transform: scale(.93);
+}
+
+.container a {
+    text-decoration: none;
+    color: var(--color-button);
+}
+
+.text {
+    margin-top: 30px;
+}
+
+.form-control {
+    width: 300px;
+    margin: 20px 0 40px;
+    position: relative;
+}
+
+.form-control input {
+    border: 0;
+    border: 2px solid #FFFFFF;
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+
+/* 为了方便，直接拿定义的button颜色 */
+
+.form-control input:focus {
+    outline: 0;
+    border-bottom-color: var(--color-button);
+}
+
+.form-control input:valid {
+    border-bottom-color: var(--color-button);
+}
+
+.form-control label{
+    display: inline-block;
+    position: absolute;
+    left: 3px;
+    top: 15px;
+
+}
+.form-control label span{
+    /* font-size: 0; */
+    display: inline-block;
+    /* float:right; */
+    transition: all 0.25s cubic-bezier(0,.67,.18,.27);
+}
+
+
+
+.form-control input:focus +label span,
+.form-control input:valid + label span 
+{
+    transform: translate(0,-37px);
+    color: var(--color-button);
+}
+
