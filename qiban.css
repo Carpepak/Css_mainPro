@@ -1,0 +1,69 @@
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+}
+html{
+    width:100%;
+    height:100%;
+}
+body{
+    width:100%;
+    height:100%;
+    padding:0;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#header{
+    position:relative;
+    height:50vh;
+    width:50vh;
+    background:#C8C365;
+    /* background-image: linear-gradient(black 2px, transparent 0),
+    linear-gradient(90deg, black 2px, transparent 0),
+    linear-gradient( black 2px , transparent 0),
+    linear-gradient(90deg, black 2px,transparent 0); */
+    background-image: linear-gradient(45deg, rgba(119,162,109,.25) 25%, transparent 0,
+    transparent 75%,rgba(119,162,109,.25)0),
+    linear-gradient(90deg, black 2px, transparent 0),
+    linear-gradient(black 2px,transparent 0),
+    linear-gradient(90deg, black 2px, transparent 0),
+    linear-gradient(90deg, black 2px, transparent 0),
+    linear-gradient(black 2px, transparent 0),
+    linear-gradient(90deg, black 2px,transparent 0),
+    linear-gradient(45deg, rgba(119,162,109,.25) 25%, transparent 0,  
+    transparent 75%,rgba(119,162,109,.25)0);
+    background-position: 0 0 , 81px 81px;
+    background-size: 162px 162px;
+    /* linear-gradient(90deg, hsla(0, 0%, 100%, .3) 1px, transparent 0); */
+    /* background-size: 81px  81px, 87px 87px; */
+                     /* 15px 15px, 15px 15px; */
+    /* border-bottom: 2px solid black;
+    border-right: 1px solid black; */
+    border: 2px solid black;
+    border-top: 1px;
+    border-left: 1px;
+    z-index: 2;
+}
+
+#header>span{
+    position: absolute;
+    display: block;
+    width: calc((50vh / 6) - 8px);
+    height: calc((50vh/6) - 8px);
+    background-color:#92513D;
+    border-radius: 100%;
+    
+}
+span:nth-child(1){
+    top: calc(8.8vh);
+    left:calc(8.9vh);
+}
+span:nth-child(2){
+    top:calc(25.6vh);
+    left:calc(25.6vh);
+
+}
